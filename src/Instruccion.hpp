@@ -3,8 +3,8 @@
 //
 #include "Instruccion.h"
 
-template<class T>
-Instruccion Instruccion::IPUSH(T valor){
+
+Instruccion Instruccion::IPUSH(int valor){
     Instruccion instr;
     instr.operacion=OPUSH;
     instr.valor=valor;

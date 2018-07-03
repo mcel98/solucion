@@ -1,6 +1,6 @@
 #include "Calculadora.hpp"
 #include <tuple>
-Calculadora Calculadora::nuevaCalculadora(Programa prog ,Rutina r, int W){
+Calculadora Calculadora::nuevaCalculadora(Programa prog ,rut r, int W){
 
 }
 
@@ -23,7 +23,7 @@ instante Calculadora::InstanteActual(Calculadora c){
     return c.momentoActual;
 }
 
-Rutina Calculadora::rutinaActual(Calculadora c){
+rut Calculadora::rutinaActual(Calculadora c){
 //    return get<0>(c.progCalc[indiceRutinaActual]);
 }
 

@@ -18,11 +18,12 @@ const Operacion OJUMP = 7;
 const Operacion OJUMPZ = 8;
 
 typedef std::string Id;
-template<class T>
+
+
 class Instruccion {
 public:
 
-    Instruccion IPUSH(T valor);
+    Instruccion IPUSH(int valor);
 
     Instruccion IADD();
 
@@ -38,21 +39,21 @@ public:
 
     Instruccion IJUMPZ(Id nombreRutina);
 
-    Operacion OP(Instruccion instr) const;
+    Operacion OP() const;
 
-    int ConstanteNumerica(Instruccion instr) const;
+    int ConstanteNumerica() const;
 
-    Id nombreVariable(Instruccion instr) const;
+    Id nombreVariable() const;
 
-    Id nombreRutina(Instruccion instr) const;
+    Id nombreRutina()const;
 
 private:
     Operacion operacion;
-    T valor;
+    int valor;
     Id nombre;
     // COMPLETAR
 };
 
-#endif /*__INSTRUCCION_H__*/
+
 
 #endif //TP3_INSTRUCCION_H
