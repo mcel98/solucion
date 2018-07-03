@@ -50,18 +50,18 @@ Instruccion Instruccion::IJUMPZ(Id nombreRutina) {
     return instr;
 }
 
-Operacion Instruccion::OP(Instruccion instr) const {
-    return instr.operacion;
+Operacion Instruccion::OP() const {
+    return operacion;
 }
 
-int Instruccion::ConstanteNumerica(Instruccion instr) const {
-    return instr.valor;
+int Instruccion::ConstanteNumerica() const {
+    return valor;
 }
 
-Id Instruccion::nombreRutina(Instruccion instr) const {
-    return instr.nombre;
+Id Instruccion::nombreRutina()const{
+    return nombre;
 }
 
-Id Instruccion::nombreVariable(Instruccion instr) const {
-    return instr.nombre;
+Id Instruccion::nombreVariable() const {
+    return nombre;
 }

@@ -13,13 +13,13 @@ using namespace std;
 #ifndef SOLUCION_CALCULADORA_H
 #define SOLUCION_CALCULADORA_H
 
-typedef string Rutina;
+typedef string rut;
 typedef string Variable;
 typedef int instante;
 
 class Calculadora{
 public:
-    Calculadora nuevaCalculadora(Programa ,Rutina, int);
+    Calculadora nuevaCalculadora(Programa ,rut, int);
 
     bool ejecutando(Calculadora);
 
@@ -35,7 +35,7 @@ public:
 
     instante InstanteActual(Calculadora);
 
-    Rutina rutinaActual(Calculadora);
+    rut rutinaActual(Calculadora);
 
     stack<int> Pila(Calculadora);
 
