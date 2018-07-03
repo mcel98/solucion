@@ -50,7 +50,7 @@ private:
     int cantidadAsignaciones;
     dicc_trie<Ventana> varVentana;
     dicc_trie<int> varAsignacionActual;
-    // tuple<Programa, int> inicio;
+    tuple<Programa, rut> inicio;
     tuple<Instruccion,int,int*>* itaInstruccion;
 };
 

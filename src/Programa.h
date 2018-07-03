@@ -9,7 +9,7 @@
 #include <tuple>
 #include <string.h>
 #include <list>
-#include "Instruccion.cpp"
+#include "Instruccion.h"
 using namespace std;
 
 
@@ -26,7 +26,7 @@ public:
     vector<string> Rutinas() const;
     int longitud(string ) const ;
     Instruccion Instrucciones(string , int) const;
-    tuple< list<Rutina*>,int> ParaCalculadora(string , int );
+    list <tuple<string,vector< tuple<Instruccion,int> >  ,int> > ParaCalculadora();
 
 
 

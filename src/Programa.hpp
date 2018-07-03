@@ -158,18 +158,20 @@ Instruccion Programa::Instrucciones(string r, int n)const {
 
 }
 
-tuple< list<Rutina*>,int> Programa::ParaCalculadora(string r, int n){
-    list<Rutina* > aux;
-    tuple< list<Rutina*>,int> res;
+list <tuple<string,vector< tuple<Instruccion,int> >  ,int> > Programa::ParaCalculadora(){
+
+    list <tuple<string,vector< tuple<Instruccion,int> >  ,int> >  res;
+
     for(int i=0;i<cantRutina;i++){
-       vector<tuple<Instruccion,int>> vacia;
-       Rutina* t = new Rutina(ListaProg[i]->Rut,vacia);
-        t->tamRut = ListaProg[i]->tamRut;
-        aux.push_back(t);
+        vector<tuple<Instruccion,int>> vacia;
+        tuple<string,vector< tuple<Instruccion,int> >  ,int> auxt(ListaProg[i]->Rut,vacia,ListaProg[i]->tamRut)
+
+       ;
+        res.push_back(auxt);
 
     }
 
-    res = make_tuple(aux,cantRutina);
+
     return res;
 }
 
