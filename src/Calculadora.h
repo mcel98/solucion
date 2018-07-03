@@ -45,7 +45,7 @@ private:
     int indiceRutinaActual;
     int indiceInstruccion;
     stack<int> pila;
-    vector<tuple<Rutina,std::list<tuple<Instruccion,int,int*>>,int>> progCalc;
+    vector<tuple<rut,std::list<tuple<Instruccion,int,int*>>,int>> progCalc;
     list<tuple<int ,Variable, instante>> asignaciones;
     int cantidadAsignaciones;
     dicc_trie<Ventana> varVentana;
